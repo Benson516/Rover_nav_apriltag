@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+  
+  <node pkg="raspicam" type="raspicam_raw_node" name="raspicam_node" respawn="true" ns="camera" output="screen">
+    <param name="quality" type="double" value="10.0"/>
+    <param name="framerate" type="double" value="50.0"/>
+    <param name="width" type="double" value="320.0" />
+    <param name="height" type="double" value="240.0" />
+  </node>
+  
+  <!--node pkg="image_proc" type="image_proc" name="image_proc" respawn="true" ns="/camera"/-->
+</launch>
